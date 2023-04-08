@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "nombre": "Lila",
+        "apellido": "Hernandez",
+        "edad": 23,
+        "foto": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "José",
+        "apellido": "Martínez",
+        "edad": 42,
+        "foto": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Sofía",
+        "apellido": "García",
+        "edad": 31,
+        "foto": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Carlos",
+        "apellido": "Sánchez",
+        "edad": 56,
+        "foto": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Laura",
+        "apellido": "Pérez",
+        "edad": 29,
+        "foto": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Juan",
+        "apellido": "González",
+        "edad": 38,
+        "foto": "https://randomuser.me/api/portraits/men/6.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Lucía",
+        "apellido": "Díaz",
+        "edad": 24,
+        "foto": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Manuel",
+        "apellido": "Fernández",
+        "edad": 46,
+        "foto": "https://randomuser.me/api/portraits/men/8.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Valentina",
+        "apellido": "Rojas",
+        "edad": 19,
+        "foto": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Marcela",
+        "apellido": "Suárez",
+        "edad": 37,
+        "foto": "https://randomuser.me/api/portraits/women/10.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Pablo",
+        "apellido": "López",
+        "edad": 53,
+        "foto": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Juliana",
+        "apellido": "Torres",
+        "edad": 25,
+        "foto": "https://randomuser.me/api/portraits/women/12.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Gabriel",
+        "apellido": "Ramírez",
+        "edad": 47,
+        "foto": "https://randomuser.me/api/portraits/men/13.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Alicia",
+        "apellido": "Castillo",
+        "edad": 28,
+        "foto": "https://randomuser.me/api/portraits/women/15.jpg"
+    },
+    {
+        "id": 15,
+        "nombre": "Diego",
+        "apellido": "Vega",
+        "edad": 34,
+        "foto": "https://randomuser.me/api/portraits/men/15.jpg"
+    }
+]
