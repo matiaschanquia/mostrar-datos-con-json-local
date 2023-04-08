@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
 import Datos from "./components/Datos";
+import Loader from "./components/Loader";
 
 function App() {
 
   const [datos, setDatos] = useState([]);
+
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch("/datos.json")
@@ -11,6 +14,7 @@ function App() {
       .then((data) => {
         setDatos(data);
         console.log(data);
+        setIsLoading(false);
       })
       .catch((error) => console.error(error));
   }, [])
@@ -19,7 +23,9 @@ function App() {
     <div className="container-app">
       <main className="main">
         <h1 className="titulo">Datos personas desde un JSON local</h1>
-        <Datos datos={datos}/>
+        {
+          isLoading ? <Loader/> : <Datos datos={datos}/>
+        }
       </main>
       <footer className="footer">
         <a href="#" target="_blank">Matias Chanquia Dev</a>
