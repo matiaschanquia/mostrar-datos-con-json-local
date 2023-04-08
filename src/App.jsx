@@ -6,7 +6,7 @@ function App() {
   const [datos, setDatos] = useState([]);
 
   useEffect(() => {
-    fetch("/src/datos.json")
+    fetch("/datos.json")
       .then((response) => response.json())
       .then((data) => {
         setDatos(data);
