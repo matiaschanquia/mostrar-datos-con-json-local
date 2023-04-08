@@ -1,11 +1,18 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Loader from "./Loader";
 
 const Dato = (props) => {
 
     const myDivRef = useRef(null);
 
+    const [isLoadingImg, setIsLoadingImg] = useState(true);
+
     const handleResize = () => {
         myDivRef.current.style.height = myDivRef.current.style.width;
+    }
+
+    const handleLoad = () => {
+        setIsLoadingImg(false);
     }
 
     useEffect(() => {
@@ -21,8 +28,11 @@ const Dato = (props) => {
 
     return(
         <div className="container-dato">
-            <div ref={myDivRef}>
-                <img src={props.foto} alt={`${props.nombre} ${props.apellido}`} />
+            <div ref={myDivRef} >
+                {
+                    isLoadingImg && <Loader/>
+                }
+                <img onLoad={handleLoad} style={{display: isLoadingImg ? "none" : "block"}} src={props.foto} alt={`${props.nombre} ${props.apellido}`} />
             </div>
             <h2>
                 {props.nombre} {props.apellido}

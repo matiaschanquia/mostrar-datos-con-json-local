@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Datos from "./components/Datos";
-import Loader from "./components/Loader";
+import Skeleton from "react-loading-skeleton";
+import 'react-loading-skeleton/dist/skeleton.css';
 
 function App() {
 
@@ -24,7 +25,11 @@ function App() {
       <main className="main">
         <h1 className="titulo">Datos personas desde un JSON local</h1>
         {
-          isLoading ? <Loader/> : <Datos datos={datos}/>
+          isLoading ? (
+            <Skeleton count={5} height={100}/>
+          ) : (
+            <Datos datos={datos}/>
+          )
         }
       </main>
       <footer className="footer">
