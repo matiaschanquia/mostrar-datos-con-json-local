@@ -43,6 +43,10 @@ a {
     width: 100%;
     max-width: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container-dato > h2,
@@ -52,7 +56,6 @@ a {
 
 .container-dato > div {
     width: 100%;
-    /* height: 200px; */
 }
 
 .container-dato > div > img {
